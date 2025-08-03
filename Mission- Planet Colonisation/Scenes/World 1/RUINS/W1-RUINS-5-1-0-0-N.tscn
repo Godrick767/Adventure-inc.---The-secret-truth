@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmjgs2wkuonvi"]
+
+[ext_resource type="PackedScene" uid="uid://dbv0a8vva0d7u" path="res://Mission- Planet Colonisation/Scenes/player.tscn" id="1_gy7on"]
+
+[node name="W1-RUINS-5-1-0_4-0-N" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_gy7on")]

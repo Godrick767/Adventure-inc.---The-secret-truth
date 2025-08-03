@@ -1,0 +1,13 @@
+{
+	"player_gp_x": 0,
+	"player_gp_y": 0,
+	"player_max_hp": 5,
+	"player_hp": 5,
+	"player_max_TB": 10,
+	"player_TB": 0,
+	"player_max_jumps": 1,
+	"player_jumps": 1,
+	"player_atk": 1,
+	"player_def": 2,
+	"player_scene": "res://Scenes/World 1/RUINS/W1-RUINS-5-1-0_4-0-N"
+}

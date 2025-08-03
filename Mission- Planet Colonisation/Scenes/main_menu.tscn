@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpav2adq75hdc"]
+
+[ext_resource type="Script" uid="uid://0op82edrbs40" path="res://Mission- Planet Colonisation/Scripts/start.gd" id="1_28flt"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 275.0
+offset_right = 835.0
+offset_bottom = 325.0
+theme_override_font_sizes/font_size = 30
+text = "Start"
+script = ExtResource("1_28flt")
+
+[node name="Settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 331.0
+offset_right = 835.0
+offset_bottom = 381.0
+theme_override_font_sizes/font_size = 30
+text = "Settings"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 387.0
+offset_right = 835.0
+offset_bottom = 437.0
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 371.0
+offset_top = 136.0
+offset_right = 746.0
+offset_bottom = 249.0
+theme_override_font_sizes/font_size = 40
+text = "Mission:
+Planet Colonisation"
+horizontal_alignment = 1
+
+[connection signal="button_down" from="Start" to="Start" method="_on_button_down"]

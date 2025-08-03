@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckl6umr3ittnx"]
+
+[ext_resource type="Script" uid="uid://cisks3xwd86yw" path="res://Mission- Planet Colonisation/Scripts/Saving/load_game.gd" id="1_ktpev"]
+
+[node name="Save_Choose" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -636.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save 1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 181.0
+offset_right = 720.0
+offset_bottom = 271.0
+theme_override_font_sizes/font_size = 45
+text = "Load Save 1"
+script = ExtResource("1_ktpev")
+
+[node name="Save 2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 281.0
+offset_right = 720.0
+offset_bottom = 371.0
+theme_override_font_sizes/font_size = 45
+text = "Load Save 2"
+script = ExtResource("1_ktpev")
+file_num = 2
+
+[node name="Save 3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 385.0
+offset_right = 721.0
+offset_bottom = 475.0
+theme_override_font_sizes/font_size = 45
+text = "Load Save 3"
+script = ExtResource("1_ktpev")
+file_num = 3
+
+[connection signal="button_down" from="Save 1" to="Save 1" method="_on_button_down"]
+[connection signal="button_down" from="Save 2" to="Save 2" method="_on_button_down"]
+[connection signal="button_down" from="Save 3" to="Save 3" method="_on_button_down"]

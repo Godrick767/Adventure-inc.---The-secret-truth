@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbv0a8vva0d7u"]
+
+[ext_resource type="Script" uid="uid://kxicebyggqvy" path="res://Mission- Planet Colonisation/Scripts/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://1xucvhwey3g5" path="res://Mission- Planet Colonisation/Sprites/Player/Player/Player_sprite.png" id="2_6t5aa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_noarx"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0tk4"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3fl7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_noarx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0tk4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_noarx"]
+size = Vector2(8, 13)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_cvnsp")
+
+[node name="PlAnimSpr" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r3fl7")
+
+[node name="PlayerColl" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_noarx")
+
+[node name="Camera" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
